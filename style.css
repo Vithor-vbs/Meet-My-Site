@@ -1,0 +1,124 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  background: rgb(24, 29, 26);
+  background: linear-gradient(
+    45deg,
+    rgba(24, 29, 26, 1) 20%,
+    rgba(80, 78, 78, 1) 94%
+  );
+}
+
+/* ------------------------------------------------------------------------
+  navigation
+------------------------------------------------------------------------ */
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.nav-btn:link,
+.nav-btn:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 1.4rem;
+  color: #fff;
+  padding: 1rem;
+}
+.nav-btn::after {
+  background-color: #d31339;
+  content: "";
+  display: block;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+}
+.nav-btn:hover,
+.nav-btn:active {
+  color: #d31339;
+  transition: all 0.3s;
+}
+
+.hero-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+}
+
+.hero {
+  color: #c3c6c5;
+  margin-left: 4.4rem;
+}
+.header-first {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.vithor {
+  font-size: 8rem;
+  color: #c3c6c5;
+}
+
+.vilas-boas {
+  font-size: 8rem;
+
+  color: #181d1a;
+  -webkit-text-stroke: 2px #c3c6c5;
+  margin-bottom: 0.5rem;
+}
+
+.header-second {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.dev-span {
+  color: #d31339;
+  box-shadow: 0 3.2rem 6.4rem rgba(228, 29, 29, 0.3);
+}
+.hero-img {
+  margin-left: 10rem;
+}
+
+.img-sec {
+  border-radius: 50%;
+  background-color: #d31339;
+  width: 30rem;
+  height: 30rem;
+
+  box-shadow: 0 3.2rem 6.4rem rgba(215, 40, 40, 0.2);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(124, 6, 6, 0.2),
+      rgba(124, 6, 6, 0.2)
+    ),
+    url("img/myPhoto.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -50px;
+}
+.img {
+  height: 30rem;
+}
